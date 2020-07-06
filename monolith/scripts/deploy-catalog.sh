@@ -3,7 +3,7 @@
 USERXX=$1
 DELAY=$2
 
-if [ -z $USERXX ]
+if [ -z "$USERXX" -o "$USERXX" = "userXX" ]
   then
     echo "Usage: Input your username like deploy-catalog.sh user1"
     exit;
